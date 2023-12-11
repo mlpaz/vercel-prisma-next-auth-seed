@@ -1,0 +1,6 @@
+.wrapper {
+  @apply flex pb-3 px-4 justify-between;
+}
+.iconsContainer {
+  @apply flex gap-x-4;
+}

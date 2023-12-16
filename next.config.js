@@ -4,6 +4,7 @@ const nextConfig = {
     outputFileTracingIncludes: {
       "/*": ["./content/**/*"],
     },
+    output: "standalone",
   },
 };
 

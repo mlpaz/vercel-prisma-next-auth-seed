@@ -3,8 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NextAuthProvider from "@/components/NextAuthProvider";
 import Header from "@/components/Header";
-
-const inter = Inter({ subsets: ["latin"] });
+import ico from "../../public/favico.ico";
 
 export const metadata: Metadata = {
   title: "Tapiceria Nautica",
@@ -19,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href={ico.src} sizes="any" />
       </head>
       <body>
         <NextAuthProvider>

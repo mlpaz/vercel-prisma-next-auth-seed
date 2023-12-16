@@ -85,7 +85,8 @@ export default function UserTable({ initUsers }: { initUsers: IDataTable }) {
         />
       )}
       <div className={styles.tableActionsWrapper}>
-        <div className="flex ml-[45%] w-[200px]">
+        <div className="w-[195px]" />
+        <div className="flex w-[200px]">
           <Input
             value={search}
             onChange={(e: any) => {

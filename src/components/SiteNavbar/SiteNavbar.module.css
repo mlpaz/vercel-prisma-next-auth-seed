@@ -1,0 +1,23 @@
+.wrapper {
+  @apply p-4;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  top: 67px;
+  background-color: var(--theme-color);
+  height: 93.25vh;
+}
+
+.optionNav {
+  @apply py-4 px-4 flex cursor-pointer hover:bg-blue-500 text-center;
+}
+
+.iconNav {
+  @apply mr-2;
+}
+
+.textNav {
+  @apply m-auto;
+}

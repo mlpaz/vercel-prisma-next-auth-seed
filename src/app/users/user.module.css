@@ -1,0 +1,27 @@
+.wrapper {
+  @apply flex flex-col mt-8;
+}
+
+.tableActionsWrapper {
+  @apply flex justify-between mt-4;
+}
+
+.modalContent {
+  @apply m-4 w-80;
+  font-size: 14px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.modalActions {
+  @apply flex pb-2;
+  width: 100%;
+}
+
+.actionsContainer {
+  @apply mx-4 my-2 gap-4;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}

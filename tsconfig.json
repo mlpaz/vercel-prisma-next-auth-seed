@@ -20,14 +20,17 @@
     ],
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/Input/index.tsx"
+    "src/components/Input/index.tsx",
+    "src/lib/prisma.ts",
+    "middleware.ts"
   ],
   "exclude": ["node_modules"]
 }

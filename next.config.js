@@ -4,8 +4,8 @@ const nextConfig = {
     outputFileTracingIncludes: {
       "/*": ["./content/**/*"],
     },
-    output: "standalone",
   },
+  output: "standalone",
 };
 
 module.exports = nextConfig;

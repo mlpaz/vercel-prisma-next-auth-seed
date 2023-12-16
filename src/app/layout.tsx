@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/Footer/Footer";
-import Head from "next/head";
 import NextAuthProvider from "@/components/NextAuthProvider";
 import Header from "@/components/Header";
 
@@ -21,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link rel="icon" href="/favico.ico" sizes="any" />
+        <link rel="icon" href="./favico.ico" sizes="any" />
       </head>
       <body>
         <NextAuthProvider>

@@ -18,9 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <head>
-        <link rel="icon" href="./favico.ico" sizes="any" />
-      </head>
+      <head></head>
       <body>
         <NextAuthProvider>
           <Header />

@@ -9,7 +9,9 @@ function Header() {
     <header className={styles.wrapper}>
       <SiteNavbar />
       <div className="h-[67px] flex ">
-        <h1 className="m-auto text-center">Tapiceria Nautica Buenos Aires</h1>
+        <h1 className="m-auto text-center ml-[233px]">
+          Tapiceria Nautica Buenos Aires
+        </h1>
       </div>
       <UserNavbar />
     </header>

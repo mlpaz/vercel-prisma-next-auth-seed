@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --theme-color: rgba(25, 35, 62, 255);
+  --theme-color: #19233e;
 }
 
 html {

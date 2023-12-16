@@ -85,17 +85,16 @@ export default function UserTable({ initUsers }: { initUsers: IDataTable }) {
         />
       )}
       <div className={styles.tableActionsWrapper}>
-        <div className="w-[55%] ">
-          <div className="flex justify-end">
-            <Input
-              value={search}
-              onChange={(e: any) => {
-                setSearch(e.target.value);
-              }}
-              placeholder={"Buscar Usuario ..."}
-            />
-          </div>
+        <div className="flex ml-[45%] w-[200px]">
+          <Input
+            value={search}
+            onChange={(e: any) => {
+              setSearch(e.target.value);
+            }}
+            placeholder={"Buscar Usuario ..."}
+          />
         </div>
+
         <div className="self-end mr-8">
           <Button
             onClick={() => {

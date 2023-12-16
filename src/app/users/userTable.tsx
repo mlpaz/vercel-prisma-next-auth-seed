@@ -48,11 +48,14 @@ export default function UserTable({ initUsers }: { initUsers: IDataTable }) {
     ),
   ];
 
-  function upsertUserHandler(newUser: IUser) {
-    fetch("/api/users/upsert", {
+  async function upsertUserHandler(newUser: IUser) {
+    const response = await fetch("/api/users/upsert", {
       method: "POST",
       body: JSON.stringify(newUser),
     });
+    if (response.ok) {
+      findUser();
+    }
   }
 
   async function findUser() {

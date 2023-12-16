@@ -4,6 +4,8 @@ import UserTable from "./userTable";
 import { IDataTable } from "@/components/Table/interface";
 import { IUser } from "@/db/model";
 
+export const dynamic = "force-dynamic";
+
 export default async function Login() {
   const initUsers: IUser[] = await getUsers();
   const initResult: IDataTable = {

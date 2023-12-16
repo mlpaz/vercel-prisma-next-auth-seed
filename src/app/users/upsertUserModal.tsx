@@ -15,7 +15,7 @@ const CreateUserModal = ({
   upsertUserHandler: any;
   modalUser: IUser | null;
 }) => {
-  const title: string = modalUser ? "Editar Usiario" : "Agregar Usuario";
+  const title: string = modalUser ? "Editar Usuario" : "Agregar Usuario";
 
   function handleSubmit(event: any) {
     event.preventDefault();

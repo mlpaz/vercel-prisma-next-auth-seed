@@ -5,7 +5,7 @@ function Logo({ width = 50, height = 50, ...delegated }) {
   return (
     <>
       <Image
-        src="/logo-TN.jpeg"
+        src="/logo-TN.svg"
         alt="Logo"
         width={width}
         height={height}

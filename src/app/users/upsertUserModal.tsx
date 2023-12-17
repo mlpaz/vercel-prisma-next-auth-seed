@@ -26,7 +26,6 @@ const CreateUserModal = ({
       newUser = { id: modalUser.id, ...newUser };
     }
     newUser = { email, ...newUser };
-    console.info(newUser);
     upsertUserHandler(newUser);
     setIsOpen(false);
   }

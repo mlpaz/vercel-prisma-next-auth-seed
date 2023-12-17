@@ -1,16 +1,27 @@
+import { IDataTable } from "@/components/Table/interface";
 import { IUser } from "../model";
 import prisma from "@/lib/prisma";
 
-export async function getUsers(email?: string): Promise<IUser[]> {
+export async function getUsers(
+  limit: number = 5,
+  offset: number = 0,
+  email?: string
+): Promise<IDataTable<IUser>> {
   let where = {};
   if (email) {
     where = { email: { contains: email }, ...where };
   }
-  const results: IUser[] = await prisma.user.findMany({
-    where,
-  });
+  const [users, count] = await prisma.$transaction([
+    prisma.user.findMany({
+      skip: offset,
+      take: limit,
+      where,
+    }),
 
-  return results;
+    prisma.user.count({ where }),
+  ]);
+
+  return { results: users, count };
 }
 
 export async function deleteUser(id: string) {

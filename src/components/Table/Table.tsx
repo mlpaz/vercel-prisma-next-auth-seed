@@ -10,7 +10,7 @@ function Table({
 }: {
   headers: IHeadConfig[];
   columns: ColumnLambda[];
-  data: IDataTable | undefined;
+  data: IDataTable<any> | undefined;
 }) {
   const reactRowId = useId();
   const reactColumnId = useId();

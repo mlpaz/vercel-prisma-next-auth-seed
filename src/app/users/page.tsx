@@ -7,15 +7,12 @@ import { IUser } from "@/db/model";
 export const dynamic = "force-dynamic";
 
 export default async function Login() {
-  const initUsers: IUser[] = await getUsers();
-  const initResult: IDataTable = {
-    results: initUsers,
-    count: initUsers.length,
-  };
+  const initUsers: IDataTable<IUser> = await getUsers();
+
   return (
     <div className={styles.wrapper}>
       <h1>Administrar Usuarios </h1>
-      <UserTable initUsers={initResult} />
+      <UserTable initUsers={initUsers} />
     </div>
   );
 }

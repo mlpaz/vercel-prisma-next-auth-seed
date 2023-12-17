@@ -1,0 +1,17 @@
+.container {
+  @apply flex justify-center;
+}
+
+.select {
+  @apply block p-2 text-sm text-white border border-gray-300 rounded-lg 
+  focus:ring-blue-500 focus:border-blue-500;
+  background-color: var(--theme-color);
+}
+
+.infoContainer {
+  @apply text-black text-sm flex self-center gap-[5px] mx-2;
+}
+
+.arrowButon {
+  @apply disabled:opacity-20;
+}

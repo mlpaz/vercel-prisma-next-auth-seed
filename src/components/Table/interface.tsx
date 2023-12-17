@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-export interface IDataTable {
-  count?: number;
-  results?: any[];
+export interface IDataTable<T> {
+  count: number;
+  results: T[];
 }
 export interface IHeadConfig {
   name: string;
